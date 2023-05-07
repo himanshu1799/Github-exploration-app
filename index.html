@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<style>body {
+	background-color: #eee;
+	font-family: sans-serif;
+}
+.login-box form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+}
+
+.login-box {
+    display: flex;
+	background-color: #fff;
+    border-radius: 50px;
+	/* padding: 20px; */
+	margin: 100px auto;
+	width: 60%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	margin: 0 0 20px 0;
+    color: #3DC3BE;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+.login-img{
+    width=40%;
+    border-radius: 50px;
+}
+</style>
+	
+    
+	<div class="login-box">
+        <img class="login-img" src="./login.png">
+        <div class="login-text">
+		    <h1>Login</h1>
+		    <form>
+			    <label for="username">Username:</label>
+			    <input type="text" id="username" name="username" required>
+
+			    <label for="password">Password:</label>
+			    <input type="password" id="password" name="password" required>
+			    <input type="submit" value="Login">
+		    </form>
+	    </div>
+    </div>
+</body>
+</html>
