@@ -14,7 +14,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: max-content;
+    height: 400px;
+    color: #3DC3BE;
+	
 }
 
 .login-box {
@@ -25,16 +27,20 @@
 	margin: 100px auto;
 	width: 60%;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #3DC3BE;
+  
 }
 
 h1 {
 	margin: 0 0 20px 0;
     color: #3DC3BE;
+  
 }
 
 form label {
 	display: block;
 	margin-bottom: 10px;
+    
 }
 
 form input[type="text"],
@@ -42,41 +48,54 @@ form input[type="password"] {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 20px;
-	border: none;
+	border:#3DC3BE;
 	border-radius: 3px;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
 form input[type="submit"] {
-	background-color: #4CAF50;
-	color: #fff;
-	padding: 10px 20px;
+	background-color:#3DC3BE;;
+	color: white;
+	padding: 10px 60px;
 	border: none;
-	border-radius: 3px;
+	border-radius: 50px;
 	cursor: pointer;
+
 }
 
 form input[type="submit"]:hover {
-	background-color: #3e8e41;
+	background-color: #3DC3BE;
+    color: white;
+    border-radius: 50px;
+    background-color: white;
 }
 .login-img{
     width=40%;
     border-radius: 50px;
 }
+.psw {
+  float: right;
+  padding: top 100px;
+ margin-top: 100px;
+ margin-left: 200px;
+}
+
 </style>
 	
     
 	<div class="login-box">
         <img class="login-img" src="./login.png">
         <div class="login-text">
-		    <h1>Login</h1>
+		    <h1 style="margin-top: 80px;margin-left: 80px;">LOGIN</h1>
 		    <form>
 			    <label for="username">Username:</label>
 			    <input type="text" id="username" name="username" required>
 
 			    <label for="password">Password:</label>
 			    <input type="password" id="password" name="password" required>
-			    <input type="submit" value="Login">
+                
+			    <input type="submit"  class="login" value="Login">
+                <span class="psw">Forgot<br> <a href=>help</a></span>
 		    </form>
 	    </div>
     </div>
